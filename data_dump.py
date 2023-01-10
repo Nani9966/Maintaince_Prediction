@@ -73,5 +73,7 @@ if __name__=="__main__":
     print(f"Rows and columns of train_data is:{train_df.shape}")
 
 
+################## change the data ######
 
+    print(sss)
 
