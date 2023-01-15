@@ -21,7 +21,7 @@ class TrainingPipelineConfig:
 
 class DataIngestionConfig:
 
-    def __init__(self,trainingPipelineConfig:TrainingPipelineConfig):
+    def __init__(self,training_pipeline_config:TrainingPipelineConfig):
 
         try:
             self.database_name="PREDICTION"

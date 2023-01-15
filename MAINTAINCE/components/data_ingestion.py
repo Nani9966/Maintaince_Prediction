@@ -11,5 +11,3 @@ class DataIngestion:
             self.data_ingestion_config=data_ingestion_config
         except Exception as e:
             raise PredictionException(e, sys)
-
-    def 
