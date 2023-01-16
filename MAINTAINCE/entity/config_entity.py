@@ -3,6 +3,9 @@ import os,sys
 from MAINTAINCE.exception import PredictionException
 from MAINTAINCE.logger import logging
 from datetime import datetime
+                        
+                             
+                           
 
 
 FILE_NAME ="PREDICTION.CSV"
@@ -18,6 +21,7 @@ class TrainingPipelineConfig:
             self.artifact_dir = os.path.join(os.getcwd(),"artifact",f"{datetime.now().strftime('%m%d%Y__%H%M%S')}")
         except Exception  as e:
             raise PredictionException (e,sys)  
+
 
 class DataIngestionConfig:
 

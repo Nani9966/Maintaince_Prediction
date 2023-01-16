@@ -1,9 +1,8 @@
 import pandas as pd
-from MAINTAINCE.config import mongo_client
-from MAINTAINCE.exception import PredictionException
 from MAINTAINCE.logger import logging
+from MAINTAINCE.exception import PredictionException
+from MAINTAINCE.config import mongo_client
 import os,sys
-
 
 def get_collection_as_dataframe(database_name:str,collection_name:str)->pd.DataFrame:
     """
@@ -26,3 +25,4 @@ def get_collection_as_dataframe(database_name:str,collection_name:str)->pd.DataF
         return df
     except Exception as e:
         raise PredictionException(e, sys)
+    
